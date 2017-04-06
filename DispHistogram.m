@@ -6,6 +6,6 @@ function [] = DispHistogram(values, numBins, gTitle, xAxisLabel, yAxisLabel)
     title(gTitle);
     xlabel(xAxisLabel);
     ylabel(yAxisLabel);
-
+    saveas(gcf, [fullfile('C:\Users\dania\Documents\MATLAB\Figures', gTitle), '.pdf']);
 end
 
